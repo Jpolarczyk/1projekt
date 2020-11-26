@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+   <meta charset="utf-8">
+   <script src="script.js"> </script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Kalkulator Jędrzej Polarczyk</title>	
 
@@ -13,37 +14,40 @@
 	</header>
 <div class="kalkulator">
     <img src="antenka.png">
-	<p id="wyswietlacz">0</p>
+	<p id="wyswietlacz"> 0</p>
 <div id="rzad1">
-   <button id="r1-1">C</button>
-   <button id="r1-3">%</button>
-   <button id="r1-4">÷</button>
+   <button id="r1-1" onclick="wyczysc()">C</button>
+   <button id="r1-2" onclick="procent()">%</button>
+   <button id="r1-3" onclick="wyswietl('/')">/</button>
+   <button id="r1-4" onclick="wlaczwylacz()">I/0</button>
 </div>
 <div id="rzad2">
-   <button id="r2-1" >7</button>
-   <button id="r2-2" >8</button>
-   <button id="r2-3" >9</button>
-   <button id="r2-4" >x</button>
+   <button id="r2-1" onclick="wyswietl('7') " >7</button>
+   <button id="r2-2" onclick="wyswietl('8') " >8</button>
+   <button id="r2-3" onclick="wyswietl('9')  " >9</button>
+   <button id="r2-4" onclick="wyswietl('*') " >x </button> 
 </div>
 <div id="rzad3">
-   <button id="r3-1" >4</button>
-   <button id="r3-2" >5</button>
-   <button id="r3-3" >6</button>
-   <button id="r3-4" >-</button>
+   <button id="r3-1" onclick="wyswietl('4')  " >4</button>
+   <button id="r3-2" onclick="wyswietl('5')  " >5</button>
+   <button id="r3-3" onclick="wyswietl('6')  " >6</button>
+   <button id="r3-4" onclick="wyswietl('-')  " >-</button>
 </div>
 <div id="rzad4">
-   <button id="r4-1"  >1</button>
-   <button id="r4-2"  >2</button>
-   <button id="r4-3"  >3</button>
-   <button id="r4-4"  >+</button>
+   <button id="r4-1"  onclick="wyswietl('1')  " >1</button>
+   <button id="r4-2"  onclick="wyswietl('2')  " >2</button>
+   <button id="r4-3"  onclick="wyswietl('3')  " >3</button>
+   <button id="r4-4" onclick="wyswietl('+')  "  >+</button>
 </div>
 <div id="rzad5">
-  <button id="r5-1" >.</button>
-  <button id="r5-2" >0</button>
-  <button id="r5-3" >=</button>
+  <button id="r5-1" onclick="wyswietl('.')  " >.</button>
+  <button id="r5-2" onclick="wyswietl('0')  " >0</button>
+  <button id="r5-3" onclick="oblicz('=')  " >=</button>
 </div>
 
 </div>
+
+
 
 </body>
 </html>

@@ -33,8 +33,3 @@ function wyswietl(value)
    removeZero()
     document.getElementById("wyswietlacz").innerHTML += value;
 }
-
-function wlaczwylacz()
-{
-    
-}
